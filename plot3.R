@@ -18,7 +18,7 @@ data$Sub_metering_3 <- as.numeric(data$Sub_metering_3)
 
 # Plotting plot3
 with(data, {
-  plot(Sub_metering_1 ~ DateTime,type="l",xlab="",ylab="Global Active Power (kilowatts)")
+  plot(Sub_metering_1 ~ DateTime,type="l",xlab="",ylab="Energy sub metering")
   lines(Sub_metering_2 ~ DateTime,col="Red")
   lines(Sub_metering_3 ~ DateTime,col="Blue")
 })

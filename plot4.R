@@ -20,7 +20,7 @@ data$Sub_metering_3 <- as.numeric(data$Sub_metering_3)
 par(mfcol = c(2,2), mar = c(4, 4, 2, 1))
 with(data, {
   plot(Global_active_power ~ DateTime,type="l",xlab="",ylab="Global Active Power")
-  plot(Sub_metering_1 ~ DateTime,type="l",xlab="",ylab="Global Active Power")
+  plot(Sub_metering_1 ~ DateTime,type="l",xlab="",ylab="Energy sub metering")
   lines(Sub_metering_2 ~ DateTime,col="Red")
   lines(Sub_metering_3 ~ DateTime,col="Blue")
   plot(Voltage ~ DateTime,type="l")
